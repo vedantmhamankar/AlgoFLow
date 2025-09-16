@@ -1,0 +1,98 @@
+.stack{
+    margin-bottom: 600px;
+    margin-left: 60px;
+    font-size:70px;
+    color:#77BEF0;
+    border: 1px,black,solid;
+}
+.input{
+    display: flex;
+}
+.stacksize{
+    position: absolute;
+    transform: translate(50px,-540px);
+    border: 1px,white,solid;
+    padding:10px;
+    border-radius: 10px;
+}
+.stackin{
+    position: absolute;
+    width: 250px;
+    transform: translate(50px,-480px);
+    border: 1px,white,solid;
+    padding:10px;
+    border-radius: 10px;
+}
+.createbtn{
+    position: absolute;
+    transform: translate(50px,-400px);
+    border:1px,white,solid;
+}
+.createbtn:hover{
+    background-color:rgb(47, 13, 197);
+    border-color:rgb(47, 13, 197);
+}
+.stackvisualization{
+    position: absolute;
+    border: 1px,white,solid;
+    background-color:393E46;
+    transform: translate(750px,-660px);
+    width:640px;
+    height:630px;
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius:10px;
+    align-content: center;
+    align-items: center;
+}
+.stackbound{
+    border:1px solid white;
+    height: 20px;
+    width:60px;
+    background-color:#77BEF0;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.stackdis{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-start;
+}
+.clearbtn{
+    position: absolute;
+    transform: translate(150px,-400px);
+    border:1px,white,solid;
+}
+.clearbtn:hover{
+    background-color:rgb(47, 13, 197);
+    border-color:rgb(47, 13, 197);
+}
+.stackoperations{
+    height:300px;
+    width:660px;
+    transform: translate(50px,-340px);
+    border: 1px,white,solid;
+}
+.stackoperations .stackoptions{
+    height: 60px;
+    width: 660px;
+    color: white;
+    border: 1px solid white;
+    
+}
+.stackoperations nav {
+    text-align: center;
+}
+.stackoperations nav h3{
+     color:#77BEF0;
+}
+.page {
+  min-height: 100vh; /* full screen */
+  width: 100%;
+  background: #0E100F; /* your dark theme */
+}
+

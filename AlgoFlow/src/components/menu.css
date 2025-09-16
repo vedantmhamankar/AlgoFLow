@@ -1,0 +1,123 @@
+
+.Mainmenu{
+    display: flex;
+    position: fixed;
+    margin-top: 50px;
+}
+.corsal img{
+    height: 300px;
+    width: 300px;
+}
+.corsal{
+    margin-left: 1000px;
+    transform: translate(0,200px);
+}
+.login .logbtn{
+    background-color: #0E100F;
+    border: 1px white solid;
+    color: white;
+}
+.login .signbtn{
+    background-color: #0E100F;
+    border: 1px white solid;
+    color: white;
+    margin-left: 20px;
+}
+.login{
+    transform: translate(1230px,-300px);
+}
+.login .logbtn:hover{
+    background-color: blue;
+    color:white;
+    border-color: blue;
+}
+.login .signbtn:hover{
+    background-color:red;
+    color:white;
+    border-color:red;
+}
+.trybtn .try{
+    margin-left: 30px;
+}
+.trybtn{
+    transform: translate(250px,200px);
+}
+.trybtn .start{
+    background-color: #0AE448;
+    color: #0E100F;
+    border: none;
+}
+.Mainmenu h3{
+    display: inline;
+    padding-left: 50px;
+     margin-top: 20px;
+}
+.about{
+    background-color: #222831;
+    text-align: center;
+    width: 1300px;
+    margin-left: 120px;
+}
+.about h2{
+    color: #0AE448;
+    padding-left: 150px;
+    margin-right: 50px;
+}
+.about p{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.DsOptions{
+    margin-bottom: 140px;
+    background-color: #222831;
+    width: 1300px;
+    height: 200px;
+    margin-left: 80px;
+}
+.DsOptions ul {
+    margin-top: 70px;
+    list-style: none;
+}
+.DsOptions h2{
+    margin-left: 600px;
+    color: #0AE448;
+}
+.DsOptions ul li{
+    display: inline;
+    background-color: #222831;
+    border: 1px solid white;
+    margin-left: 130px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size:25px;
+    cursor: pointer;
+}
+.DsOptions ul li:hover{
+    background-color: #0AE448;
+    color: #0E100F;
+    border:#0AE448;
+}
+.quiz{
+    background-color: #222831;
+    width: 1300px;
+    height: 50px;
+    margin-left: 80px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.quiz p{
+    margin-right: 100px;
+}
+.quiz button{
+    margin-left: 800px;
+    transform: translate(0px,-50px);
+}
+.quiz button:hover{
+    color: #0E100F;
+    background-color: #0AE448;
+    border:#0AE448;
+}
