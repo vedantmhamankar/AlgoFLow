@@ -5,7 +5,7 @@ import './Stack.css';
 
 
 function Stack(){
-    const [arraysize, setArraySize] = useState();
+    const [arraysize, setArraySize] = useState(0);
     const [array, setArray] = useState([]);
     const [InputValue, setInputValue] = useState('');
     const [showArray, setShowarray] = useState(false);
@@ -14,7 +14,7 @@ function Stack(){
     const [top, setTop] = useState(-1);
 
     const handlechange = (e) =>{
-        const num = parseInt(e.target.value);
+        const num = Number(e.target.value);
         setArraySize(num);
     };
 
@@ -65,7 +65,7 @@ function Stack(){
             <h1 className="stack">Stack</h1>
             <input 
                 className="stacksize" 
-                type="text" 
+                type="Number" 
                 placeholder="enter array size" 
                 value={arraysize} 
                 onChange={handlechange}
@@ -180,7 +180,7 @@ function Options({arraysize ,array,setArray,setSwap,top,setTop}){
             <h3>Operations</h3>
         </nav>
         <div>
-            <input style={{border:"1px,solid,white", marginLeft:"30px"}} value={Isertinput} onChange={handle_Insertion_input}/>
+            <input style={{border:"1px,solid,white", marginLeft:"30px"}} type="Number" value={Isertinput} onChange={handle_Insertion_input}/>
             <button style={{marginLeft:"20px", backgroundColor:"#77BEF0", border:"1px solid #77BEF0",color:"black"}} onClick={handle_push}>Push</button>
             <button style={{marginLeft:"20px",backgroundColor:"#77BEF0", border:"1px solid #77BEF0",color:"black"}} onClick={handle_pop}>Pop</button>
             <button style={{ marginTop:"50px",marginLeft:"20px",backgroundColor:"#77BEF0", border:"1px solid #77BEF0",color:"black"}} onClick={handle_peek}>Peek</button>

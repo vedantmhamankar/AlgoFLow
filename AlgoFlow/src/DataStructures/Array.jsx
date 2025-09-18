@@ -6,7 +6,7 @@ import './Array.css';
 
 
 function ArrayCr(){
-    const [arraysize, setArraySize] = useState();
+    const [arraysize, setArraySize] = useState(0);
     const [array, setArray] = useState([]);
     const [InputValue, setInputValue] = useState('');
     const [showArray, setShowarray] = useState(false);
@@ -15,7 +15,7 @@ function ArrayCr(){
 
 
     const handlechange = (e) =>{
-        const num = parseInt(e.target.value);
+        const num = Number(e.target.value);
         setArraySize(num);
     };
 
@@ -62,7 +62,7 @@ function ArrayCr(){
             <h1 className="arr">Array</h1>
             <input 
                 className="arrsize" 
-                type="text" 
+                type="Number" 
                 placeholder="enter array size" 
                 value={arraysize} 
                 onChange={handlechange}
@@ -122,11 +122,11 @@ function Options({arraysize ,array,setArray,swap,compare,setSwap,setCompare}){
     const[error , seterror] = useState(false);
 
     const handle_Insertion_input = (e) =>{
-        const num = parseInt(e.target.value);
+        const num = Number(e.target.value);
         Inputset(num);
     };
     const handle_insertion_value = (e) =>{
-        const num = parseInt(e.target.value);
+        const num = Number(e.target.value);
         setposition(num);
     };
     const InsertionOp = () =>{
@@ -430,9 +430,9 @@ const MergeSort = async () => {
             transition={{duration:0.4}}
             >
                 <label style={{paddingLeft:"40px", fontWeight:"normal"}}>Enter postion :</label>
-                <input style={{border:"1px,solid,white", marginLeft:"30px"}} value={position} onChange={handle_insertion_value}/>
+                <input style={{border:"1px,solid,white", marginLeft:"30px"}} value={position} type="Number" onChange={handle_insertion_value}/>
                 <label style={{paddingLeft:"40px",fontWeight:"normal"}}>Enter number :</label>
-                <input style={{border:"1px,solid,white", marginLeft:"30px"}} value={Isertinput} onChange={handle_Insertion_input}/>
+                <input style={{border:"1px,solid,white", marginLeft:"30px"}} value={Isertinput} type="Number"onChange={handle_Insertion_input}/>
                 <button 
                  style={{
                      marginTop: "20px",
@@ -477,9 +477,9 @@ const MergeSort = async () => {
             transition={{duration:0.4}}
             >
                 <label style={{paddingLeft:"40px", fontWeight:"normal"}}>Enter postion :</label>
-                <input style={{border:"1px,solid,white", marginLeft:"30px"}} value={position} onChange={handle_insertion_value}/>
+                <input style={{border:"1px,solid,white", marginLeft:"30px"}} value={position} type="Number" onChange={handle_insertion_value}/>
                 <label style={{paddingLeft:"40px",fontWeight:"normal"}}>Enter number :</label>
-                <input style={{border:"1px,solid,white", marginLeft:"30px"}} value={Isertinput} onChange={handle_Insertion_input} />
+                <input style={{border:"1px,solid,white", marginLeft:"30px"}} value={Isertinput} type="Number" onChange={handle_Insertion_input} />
                 <button style={{marginTop:"20px",border:"1px, solid  #A3DC9A", marginLeft:"40px",color:"black",backgroundColor:" #A3DC9A"}} onClick={DeletaionOp}>Perform</button>
                  {error &&(
                     <AnimatePresence mode="wait">
@@ -514,7 +514,7 @@ const MergeSort = async () => {
             exit={{opacity:0}}
             transition={{duration:0.4}}
             >
-                <input style={{border:"1px,solid,white", marginLeft:"30px"}} value={Isertinput} onChange={handle_Insertion_input} />
+                <input style={{border:"1px,solid,white", marginLeft:"30px"}} value={Isertinput} type="Number" onChange={handle_Insertion_input} />
                 <button style={{marginTop:"15px",marginLeft:"40px",border:"1px,solid, #A3DC9A",color:"black",backgroundColor:" #A3DC9A"}} onClick={Binary_Search}>Binary Search</button>
                 <button style={{marginTop:"15px",marginLeft:"40px",border:"1px,solid, #A3DC9A",color:"black",backgroundColor:" #A3DC9A"}} onClick={Linear_search}>Linear Search</button>
             </motion.div>

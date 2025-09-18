@@ -112,7 +112,7 @@ app.get("/quiz", async (req, res) => {
   }
 });
 
-// ✅ Move listen here at the very bottom
+//  Move listen here at the very bottom
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });

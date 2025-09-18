@@ -113,7 +113,8 @@ function login(){
                 width:"200px"
             }}
             > Login</motion.button>
-            <h5 style={{ color: "#166534" ,cursor:"pointer"}}>
+            <h5 style={{ color: "#166534" ,cursor:"pointer"}}
+            onClick={() => navigate("/Register")}>
                Don't have an account? Register</h5>
         </motion.div>
         </form>
@@ -249,7 +250,7 @@ function Registration(){
             </motion.button>
             <h5
               style={{ color: "#166534", cursor: "pointer" }}
-              
+              onClick={() => navigate("/login")}
             >
               Already have an account? Login
             </h5>

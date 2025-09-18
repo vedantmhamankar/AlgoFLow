@@ -5,7 +5,7 @@ import './queue.css';
 
 
 function QueueCr() {
-    const [arraysize, setArraySize] = useState("");
+    const [arraysize, setArraySize] = useState(0);
     const [array, setArray] = useState([]);
     const [InputValue, setInputValue] = useState("");
     const [showArray, setShowarray] = useState(false);
@@ -14,7 +14,7 @@ function QueueCr() {
 
     // input size change
     const handlechange = (e) => {
-        const num = parseInt(e.target.value);
+        const num = Number(e.target.value);
         setArraySize(num);
     };
 
@@ -71,7 +71,7 @@ function QueueCr() {
             />
             <input
                 className="queuein"
-                type="text"
+                type="Number"
                 placeholder="enter initial elements with , between them"
                 value={InputValue}
                 onChange={handleInputchange}
@@ -226,7 +226,7 @@ function Options({arraysize ,array,setArray}){
             transition={{duration:0.4}}
             >
                 <label style={{paddingLeft:"40px", fontWeight:"normal"}}>Enter number :</label>
-                <input style={{border:"1px solid white", marginLeft:"30px"}} value={Isertinput} onChange={handleInput}/>
+                <input style={{border:"1px solid white", marginLeft:"30px"}} type="Number" value={Isertinput} onChange={handleInput}/>
                 <button 
                  style={{
                      marginTop: "20px",
